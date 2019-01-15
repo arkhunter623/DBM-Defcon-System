@@ -1,0 +1,328 @@
+{
+  "name": "Defcon",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "mWsEW",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "defconstatus",
+      "name": "Store Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "defconstatusauthuse",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "0",
+      "iftrue": "2",
+      "iftrueVal": "35",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "10",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "2",
+      "iftrueVal": "15",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "2",
+      "iftrueVal": "20",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "2",
+      "iftrueVal": "25",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconstatus",
+      "comparison": "1",
+      "value": "5",
+      "iftrue": "2",
+      "iftrueVal": "30",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 1",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/wzXSNWi.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Total destruction is IMMINENT. ",
+      "message": "- Do not participate in any online games\n- Log off all social media immediately\n- Take shelter outdoors until the all-clear is given\n- Threats to server securitiy are either IN PROGRESS or IMMINENT.",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"defconstatusauthuse\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 2",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/PxKhT7h.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Sodium levels are approaching critical mass",
+      "message": "- Avoid ranked game modes at all costs\n- Mute all hostile voice channels\n- Queue up some relaxing jazz music\n- Prepare all ban hammers for use!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"defconstatusauthuse\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 3",
+      "author": "",
+      "color": "ffff00",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/E71VSBE.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Sodium levels may exceed OSHA exposure limits.",
+      "message": "- Use extreme caution when playing ranked games\n- Log off non-essential communication channels\n- Put on your big boy pants\n- Now Hear this!! Admins Mods!! Man your battle stations!!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"defconstatusauthuse\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 4",
+      "author": "",
+      "color": "00FF00",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/siIWL5V.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Trace amounts of sodium have been detected.",
+      "message": "- Inhale deeply through your nose and count to 5\n- Take short breaks between games\n- Do not encourage trolls\n- Keep a closer eye on chats!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"defconstatusauthuse\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 5",
+      "author": "",
+      "color": "0080ff",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/uTPeW7N.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "No known threats to your self esteem exist at this time.",
+      "message": "- Partipaction in online games is encouraged\n- Remain vigilant of insider threats\n- Report all suspicious activity\n- All is well. ",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"defconstatusauthuse\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "No Alert Level!!",
+      "author": "",
+      "color": "",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "defconalert",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "fieldName": "No Alert Level is set!!",
+      "message": "Use !setdefcon 1-5 to set it!!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ]
+}
