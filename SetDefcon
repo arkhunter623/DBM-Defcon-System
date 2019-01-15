@@ -1,0 +1,393 @@
+{
+  "name": "SetDefcon",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "_id": "cNyZo",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "defconnumber",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "defconnumber",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "8",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconnumber",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "2",
+      "iftrueVal": "16",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconnumber",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "2",
+      "iftrueVal": "24",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconnumber",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "2",
+      "iftrueVal": "32",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "defconnumber",
+      "comparison": "1",
+      "value": "5",
+      "iftrue": "2",
+      "iftrueVal": "40",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "authorizeduser",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "changeType": "0",
+      "value": "tempVars(\"defconnumber\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "changeType": "0",
+      "value": "tempVars(\"authorizeduser\")",
+      "name": "Control Server Data"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 1",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/wzXSNWi.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Total destruction is IMMINENT. ",
+      "message": "- Do not participate in any online games\n- Log off all social media immediately\n- Take shelter outdoors until the all-clear is given\n- Threats to server securitiy are either IN PROGRESS or IMMINENT.",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"authorizeduser\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "authorizeduser",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "changeType": "0",
+      "value": "tempVars(\"defconnumber\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "changeType": "0",
+      "value": "tempVars(\"authorizeduser\")",
+      "name": "Control Server Data"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 2",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/PxKhT7h.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Sodium levels are approaching critical mass",
+      "message": "- Avoid ranked game modes at all costs\n- Mute all hostile voice channels\n- Queue up some relaxing jazz music\n- Prepare all ban hammers for use!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"authorizeduser\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "authorizeduser",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "changeType": "0",
+      "value": "tempVars(\"defconnumber\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "changeType": "0",
+      "value": "tempVars(\"authorizeduser\")",
+      "name": "Control Server Data"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 3",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/E71VSBE.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Sodium levels may exceed OSHA exposure limits.",
+      "message": "- Use extreme caution when playing ranked games\n- Log off non-essential communication channels\n- Put on your big boy pants\n- Now Hear this!! Admins Mods!! Man your battle stations!!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"authorizeduser\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "authorizeduser",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "changeType": "0",
+      "value": "tempVars(\"defconnumber\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "changeType": "0",
+      "value": "tempVars(\"authorizeduser\")",
+      "name": "Control Server Data"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 4",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/siIWL5V.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "Trace amounts of sodium have been detected.",
+      "message": "- Inhale deeply through your nose and count to 5\n- Take short breaks between games\n- Do not encourage trolls\n- Keep a closer eye on chats!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"authorizeduser\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "authorizeduser",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatus",
+      "changeType": "0",
+      "value": "tempVars(\"defconnumber\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "defconstatusauthuse",
+      "changeType": "0",
+      "value": "tempVars(\"authorizeduser\")",
+      "name": "Control Server Data"
+    },
+    {
+      "title": "This server is now at DEFCON LEVEL 5",
+      "author": "",
+      "color": "FFFFFF",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "http://i.imgur.com/uTPeW7N.gif",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "fieldName": "No known threats to your self esteem exist at this time.",
+      "message": "- Partipaction in online games is encouraged\n- Remain vigilant of insider threats\n- Report all suspicious activity\n- All is well.",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "message": "Authorized by:${tempVars(\"authorizeduser\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "DEFCONMSG",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ]
+}
